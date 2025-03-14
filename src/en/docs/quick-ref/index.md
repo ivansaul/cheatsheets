@@ -7,7 +7,9 @@
 <div class="grid cards" markdown>
 
 - [:fontawesome-brands-python: Python](python/)
-<!--- [:simple-swift: Swift](drive/teldrive-free-unlimited-cloud-storage.md)-->
+- [:simple-javascript: JavaScript](javascript/)
+- [:fontawesome-brands-swift: Swift](swift/)
+- [:fontawesome-brands-dart-lang: Dart](dart/)
 
 </div>
 
