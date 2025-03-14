@@ -1,0 +1,11 @@
+INHERIT: ../../mkdocs.yml
+
+# Project information
+site_dir: ../../site
+site_description: Share quick reference cheat sheet for developers.
+edit_uri: edit/master/src/en/docs/
+
+# Configuration
+theme:
+  name: material
+  language: en
