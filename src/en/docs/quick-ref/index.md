@@ -10,6 +10,15 @@
 - [:simple-javascript: JavaScript](javascript/)
 - [:fontawesome-brands-swift: Swift](swift/)
 - [:fontawesome-brands-dart-lang: Dart](dart/)
+- [:fontawesome-brands-git-alt: Git](git/)
+
+</div>
+
+## Toolkit
+
+<div class="grid cards" markdown>
+
+- [:simple-vim: Vim](vim/)
 
 </div>
 
