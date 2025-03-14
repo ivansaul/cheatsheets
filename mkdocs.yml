@@ -99,6 +99,7 @@ plugins:
       repository: ivansaul/cheatsheets
       branch: master
       docs_path: src/en/docs/
+      enabled: !ENV [CI, false]
 
 # Extras
 extra:
