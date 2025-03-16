@@ -8,9 +8,25 @@
 
 - [:appicons-python: Python](python/)
 - [:appicons-javascript: JavaScript](javascript/)
+- [:appicons-c: C](c/)
+- [:appicons-cpp: C++](cpp/)
+- [:appicons-java: Java](java/)
+- [:appicons-typescript: TypeScript](typescript/)
+- [:appicons-go: Go](go/)
+- [:appicons-rust: Rust](rust/)
+- [:appicons-php: PHP](php/)
 - [:appicons-swift: Swift](swift/)
 - [:appicons-dart: Dart](dart/)
 - [:appicons-git: Git](git/)
+- [:appicons-ruby: Ruby](ruby/)
+
+</div>
+
+## Database
+
+<div class="grid cards" markdown>
+
+- [:appicons-postgres: PostgreSQL](postgres/)
 
 </div>
 

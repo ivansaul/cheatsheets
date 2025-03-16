@@ -31,3 +31,7 @@
 ## Contribute
 
 We're always looking to expand and improve **Cheatsheets**! If you have a cheat sheet to share or see something that could be improved, feel free to submit a pull request. Let's build a valuable resource for developers together.  
+
+## Thanks
+
+This project is based on the [Fechin/reference](https://github.com/Fechin/reference) project. The main focus of this project is to improve organization, enhance readability, and introduce new features to make it more accessible for everyone.
