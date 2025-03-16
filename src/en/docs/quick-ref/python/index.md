@@ -1,7 +1,6 @@
 ---
 title: Python
-icon: fontawesome/brands/python
-logo: python.svg
+icon: appicons/python
 description: A concise and practical Python cheat sheet covering key syntax, core concepts, and useful features for quick reference.
 
 tags:

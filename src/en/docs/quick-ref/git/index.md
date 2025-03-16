@@ -1,7 +1,6 @@
 ---
 title: Git
-icon: fontawesome/brands/git-alt
-logo: git.svg
+icon: appicons/git
 description: This cheat sheet summarizes commonly used Git command line instructions for quick reference.
 
 tags:

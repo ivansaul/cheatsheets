@@ -6,11 +6,11 @@
 
 <div class="grid cards" markdown>
 
-- [:fontawesome-brands-python: Python](python/)
-- [:simple-javascript: JavaScript](javascript/)
-- [:fontawesome-brands-swift: Swift](swift/)
-- [:fontawesome-brands-dart-lang: Dart](dart/)
-- [:fontawesome-brands-git-alt: Git](git/)
+- [:appicons-python: Python](python/)
+- [:appicons-javascript: JavaScript](javascript/)
+- [:appicons-swift: Swift](swift/)
+- [:appicons-dart: Dart](dart/)
+- [:appicons-git: Git](git/)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 <div class="grid cards" markdown>
 
-- [:simple-vim: Vim](vim/)
+- [:appicons-vim: Vim](vim/)
 
 </div>
 

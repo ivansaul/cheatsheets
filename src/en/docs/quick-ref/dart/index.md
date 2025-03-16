@@ -1,7 +1,6 @@
 ---
 title: Dart
-icon: fontawesome/brands/dart-lang
-logo: dart.svg
+icon: appicons/dart
 description: A Dart cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
 
 tags:

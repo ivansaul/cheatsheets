@@ -1,7 +1,6 @@
 ---
 title: Swift
-icon: fontawesome/brands/swift
-logo: swift.svg
+icon: appicons/swift
 description: This cheat sheet provides examples of using Swift that cover basic Swift knowledge, control flow etc.
 
 tags:
