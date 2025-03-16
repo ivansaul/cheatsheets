@@ -83,7 +83,8 @@ markdown_extensions:
 plugins:
   - meta
   - search
-  - macros
+  - macros:
+      module_name: ../../macros
   - social:
       enabled: !ENV [CI, false]
       cards_layout: default/accent

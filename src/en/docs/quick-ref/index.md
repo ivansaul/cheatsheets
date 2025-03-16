@@ -1,24 +1,22 @@
 # Quick Reference
 
-**`Cheat-Sheets`** Your go-to reference developer guide for learning `Python`, `Rust`, `Swift`, `JavaScript`, `Kotlin`, `Go`, `Git`, and more!
-
 ## Programming
 
 <div class="grid cards" markdown>
 
-- [:appicons-python: Python](python/)
-- [:appicons-javascript: JavaScript](javascript/)
-- [:appicons-c: C](c/)
-- [:appicons-cpp: C++](cpp/)
-- [:appicons-java: Java](java/)
-- [:appicons-typescript: TypeScript](typescript/)
-- [:appicons-go: Go](go/)
-- [:appicons-rust: Rust](rust/)
-- [:appicons-php: PHP](php/)
-- [:appicons-swift: Swift](swift/)
-- [:appicons-dart: Dart](dart/)
-- [:appicons-git: Git](git/)
-- [:appicons-ruby: Ruby](ruby/)
+- [:appicons-python: Python](python/index.md)
+- [:appicons-javascript: JavaScript](javascript/index.md)
+- [:appicons-c: C](c/index.md)
+- [:appicons-cpp: C++](cpp/index.md)
+- [:appicons-java: Java](java/index.md)
+- [:appicons-typescript: TypeScript](typescript/index.md)
+- [:appicons-go: Go](go/index.md)
+- [:appicons-rust: Rust](rust/index.md)
+- [:appicons-php: PHP](php/index.md)
+- [:appicons-swift: Swift](swift/index.md)
+- [:appicons-dart: Dart](dart/index.md)
+- [:appicons-git: Git](git/index.md)
+- [:appicons-ruby: Ruby](ruby/index.md)
 
 </div>
 
@@ -26,7 +24,7 @@
 
 <div class="grid cards" markdown>
 
-- [:appicons-postgres: PostgreSQL](postgres/)
+- [:appicons-postgres: PostgreSQL](postgres/index.md)
 
 </div>
 
@@ -34,11 +32,6 @@
 
 <div class="grid cards" markdown>
 
-- [:appicons-vim: Vim](vim/)
+- [:appicons-vim: Vim](vim/index.md)
 
 </div>
-
-## Clean Code
-
-!!! tip "WIP"
-    This section is still a work in progress...

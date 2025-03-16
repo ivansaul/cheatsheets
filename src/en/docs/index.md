@@ -1,9 +1,5 @@
 # Cheatsheets for Developers
 
-<figure markdown="span">
-  ![logo](https://i.imgur.com/m2fO1J9.png){ width="100" }
-</figure>
-
 **`Cheat-Sheets`** Your go-to reference developer guide for learning `Python`, `Rust`, `Swift`, `JavaScript`, `Kotlin`, `Go`, `Git`, and more!
 
 <p align="center">
@@ -24,14 +20,22 @@
 
 ---
 
-<figure markdown="span">
-  ![banner](https://i.imgur.com/XjpdMoW.png)
-</figure>
+{{ prepend_base_path("src/en/docs/quick-ref/index.md", "quick-ref/") }}
+
+---
+
+{{ prepend_base_path("src/en/docs/clean-code/index.md", "clean-code/") }}
+
+---
 
 ## Contribute
 
-We're always looking to expand and improve **Cheatsheets**! If you have a cheat sheet to share or see something that could be improved, feel free to submit a pull request. Let's build a valuable resource for developers together.  
+We're always looking to expand and improve **Cheatsheets**! If you have a cheat sheet to share or see something that could be improved, feel free to submit a pull request. Let's build a valuable resource for developers together. Feel free to [open an issue](https://github.com/ivansaul/cheatsheets/issues) if you have any questions or suggestions. For consistency, please follow the [contributing guidelines](community/contributing.md) when creating or editing a cheat sheet.  
 
 ## Thanks
 
 This project is based on the [Fechin/reference](https://github.com/Fechin/reference) project. The main focus of this project is to improve organization, enhance readability, and introduce new features to make it more accessible for everyone.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](https://github.com/ivansaul/cheatsheets/blob/master/LICENSE).
