@@ -95,6 +95,8 @@ plugins:
       zoomable: false
       draggable: true
   - git-revision-date-localized:
+      locale: en
+      enabled: !ENV [CI, false]
       enable_creation_date: true
       type: timeago
   - literate-nav:
@@ -132,3 +134,6 @@ extra:
     - name: English
       link: https://ivansaul.github.io/cheatsheets
       lang: en
+    - name: Portuguese (BR)
+      link: https://ivansaul.github.io/cheatsheets/pt-BR/
+      lang: pt-BR
