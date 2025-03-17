@@ -1,0 +1,1 @@
+--8<-- "src/en/docs/community/contributing.md"
