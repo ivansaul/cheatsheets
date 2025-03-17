@@ -1,0 +1,6100 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Share quick reference cheat sheet for developers.">
+      
+      
+        <meta name="author" content="ivansaul">
+      
+      
+        <link rel="canonical" href="https://ivansaul.github.io/cheatsheets/quick-ref/python/lists/">
+      
+      
+        <link rel="prev" href="../f-strings/">
+      
+      
+        <link rel="next" href="../flow-control/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
+    
+    
+      
+        <title>Lists - Cheatsheets</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/timeago.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-MZBYC91Y7Z"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-MZBYC91Y7Z",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-MZBYC91Y7Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Lists - Cheatsheets" >
+      
+        <meta  property="og:description"  content="Share quick reference cheat sheet for developers." >
+      
+        <meta  property="og:image"  content="https://ivansaul.github.io/cheatsheets/assets/images/social/quick-ref/python/lists.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://ivansaul.github.io/cheatsheets/quick-ref/python/lists/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Lists - Cheatsheets" >
+      
+        <meta  name="twitter:description"  content="Share quick reference cheat sheet for developers." >
+      
+        <meta  name="twitter:image"  content="https://ivansaul.github.io/cheatsheets/assets/images/social/quick-ref/python/lists.png" >
+      
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#lists" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Cheatsheets" class="md-header__button md-logo" aria-label="Cheatsheets" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cheatsheets
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lists
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://ivansaul.github.io/cheatsheets" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://ivansaul.github.io/cheatsheets/pt-BR/" hreflang="pt-BR" class="md-select__link">
+              Portuguese (BR)
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ivansaul/cheatsheets" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ivansaul/cheatsheets
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Quick Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../clean-code/" class="md-tabs__link">
+          
+  
+    
+  
+  Clean Code
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../community/contributing/" class="md-tabs__link">
+          
+  
+    
+  
+  Community
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cheatsheets" class="md-nav__button md-logo" aria-label="Cheatsheets" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cheatsheets
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ivansaul/cheatsheets" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ivansaul/cheatsheets
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Quick Reference
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Quick Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../c/" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 38 42">
+<path fill="currentColor" fill-rule="evenodd" d="M20.096,0.28575 C21.6507561,1.15835976 24.653163,2.84381008 27.7615951,4.58873655 L28.7451648,5.14086432 C32.0250464,6.98202246 35.2659268,8.80121341 36.903,9.71975 C37.582,10.09975 38,10.80375 38,11.56575 L38,30.43275 C38,31.19475 37.582,31.89875 36.903,32.27975 C35.3482439,33.1523598 32.345837,34.8378101 29.2374049,36.5827365 L28.2538352,37.1348643 C24.9739536,38.9760225 21.7330732,40.7952134 20.096,41.71375 C19.417,42.09475 18.581,42.09475 17.903,41.71375 C16.3482439,40.8411402 13.345837,39.1556899 10.2374049,37.4107635 L9.2538352,36.8586357 C5.9739536,35.0174775 2.73307317,33.1982866 1.096,32.27975 C0.418,31.89875 0,31.19575 0,30.43375 L0,11.56675 C0,10.80475 0.418,10.10075 1.097,9.71975 C4.451,7.83675 14.549,2.16875 17.903,0.28575 C18.582,-0.09525 19.418,-0.09525 20.096,0.28575 Z M19,6.99975 C11.273,6.99975 5,13.27275 5,20.99975 C5,28.72675 11.273,34.99975 19,34.99975 C24.2106279,34.99975 28.7600712,32.1471979 31.1706024,27.9198213 L25.0359394,24.544542 C23.8185152,26.6113911 21.5699125,27.99975 19,27.99975 C15.137,27.99975 12,24.86275 12,20.99975 C12,17.13575 15.136,13.99975 19,13.99975 C21.527968,13.99975 23.7450291,15.3427307 24.9755084,17.353858 L31.0544381,13.8798146 C28.6157645,9.76264004 24.1280833,6.99975 19,6.99975 Z"/>
+</svg>
+  
+  <span class="md-ellipsis">
+    C
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            C
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/c-preprocessor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C Preprocessor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/structures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structures
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../c/file-processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Processing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cpp/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M426.666667 681.386667l17.493333 104.106666c-11.093333 5.973333-29.013333 11.52-52.906667 16.64-24.32 5.546667-52.906667 8.533333-85.76 8.533334-94.293333-1.706667-165.12-29.866667-212.48-83.626667C45.226667 672.853333 21.333333 604.16 21.333333 520.96c2.133333-98.56 30.72-174.08 85.333334-226.986667C162.986667 240.64 232.96 213.333333 317.44 213.333333c32 0 59.733333 2.986667 82.773333 8.106667s40.106667 10.666667 51.2 17.066667L426.666667 344.746667l-45.226667-14.506667c-17.066667-4.266667-36.693333-6.4-59.306667-6.4-49.493333-0.426667-90.453333 15.36-122.453333 46.933333-32.426667 31.146667-49.066667 78.933333-50.346667 142.506667 0 58.026667 15.786667 103.253333 46.08 136.533333 30.293333 32.853333 72.96 49.92 127.573334 50.346667l56.746666-5.12c18.346667-3.413333 33.706667-8.106667 46.933334-13.653333m21.333333-212.053334h85.333333V384h85.333334v85.333333h85.333333v85.333334h-85.333333v85.333333h-85.333334v-85.333333h-85.333333v-85.333334m298.666667 0h85.333333V384h85.333333v85.333333h85.333334v85.333334h-85.333334v85.333333h-85.333333v-85.333333h-85.333333z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Cpp
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Cpp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/arrays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditionals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/classes-and-objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/preprocessor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preprocessor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cpp/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dart/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+  <path d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z"></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Dart
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Dart
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/control-flows-conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control Flows : Conditionals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/control-flows-loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control Flows : Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collections
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/classes-and-objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/implicit-interfaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implicit Interfaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exceptions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/futures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Futures
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dart/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../git/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M973.83923001 469.19927094L554.67992844 50.07996969a61.99989657 61.99989657 0 0 0-87.51985407 0L380.32021906 137.07982531l110.39981625 110.39981532a73.51987781 73.51987781 0 0 1 93.079845 93.63984375l106.31982282 106.39982343a73.51987781 73.51987781 0 0 1 75.99987374 121.5597975 73.4798775 73.4798775 0 0 1-103.99982718 0 73.83987655 73.83987655 0 0 1-16.1599725-79.83986718L546.3999425 390.19940281v260.999565c7.03998844 3.43999406 13.6799775 8.11998656 19.51996781 13.91997657a73.91987719 73.91987719 0 0 1 0 103.99982718 73.75987687 73.75987687 0 0 1-104.35982625 0 73.3598775 73.3598775 0 0 1 0-103.91982656c7.2799875-7.19998781 15.47997375-12.63997875 24.19995939-16.23997312V385.39941125a73.3598775 73.3598775 0 0 1-39.83993344-96.39984L337.44029094 179.99975375 50.00076969 467.23927438c-23.99995969 24.19995937-23.99995969 63.35989406 0 87.55985437l419.19930187 419.07930187a61.79989687 61.79989687 0 0 0 87.43985438 1e-8l417.19930405-417.199305a61.7598975 61.7598975 0 0 0 2e-8-87.47985469"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Git
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Git
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/tips-and-tricks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tips and Tricks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/advanced-git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Git
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../go/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M512 32a480 480 0 1 1 0 960A480 480 0 0 1 512 32z m-45.84 346.2a178.2 178.2 0 0 0-112.2 69.24 157.02 157.02 0 0 0-33.84 117.36c3.18 35.4 21.3 67.8 49.8 88.98a142.8 142.8 0 0 0 107.7 26.4A167.22 167.22 0 0 0 592.76 612.2c6.6-8.76 12.24-18.18 16.92-28.2 6.42 24.6 20.04 46.68 39.12 63.36 27.84 23.4 63.3 36 99.72 35.16 10.44-1.26 21.18-1.5 31.86-3.54a183.42 183.42 0 0 0 96.24-51.3 155.28 155.28 0 0 0 44.82-135.84 124.62 124.62 0 0 0-56.58-89.22 149.52 149.52 0 0 0-114.12-20.4 168.72 168.72 0 0 0-112.14 66.78c-12.06 15.6-21.36 33.24-27.42 52.08H482.12a10.74 10.74 0 0 0-9.96 6.48c-5.52 10.44-15.24 31.14-20.46 43.62-2.76 6.96 0 12 7.74 12H536.6c-3.96 5.7-7.2 10.44-10.92 14.88-16.56 20.04-42.36 30-68.04 26.4a63 63 0 0 1-54.12-62.76 85.74 85.74 0 0 1 40.92-76.26 69.78 69.78 0 0 1 72.48-6c7.38 3.6 13.8 8.82 18.96 15.24 4.98 6 5.46 5.7 11.4 3.96l67.32-17.4c4.8-1.26 6.48-3.3 4.02-7.02a124.62 124.62 0 0 0-46.38-56.34 137.82 137.82 0 0 0-106.2-19.68z m346.02 85.68a66 66 0 0 1 29.04 44.58c0.84 4.38 1.2 8.82 1.2 13.2a87.72 87.72 0 0 1-50.82 75.6c-20.22 10.8-44.28 11.64-65.28 2.4a66.54 66.54 0 0 1-36.9-74.7 87.96 87.96 0 0 1 70.32-69.78 66 66 0 0 1 52.44 8.7zM287.48 527.18H207.5a6 6 0 0 0-4.02 2.22l-5.46 10.2v2.28h89.7a3.24 3.24 0 0 0 2.76-2.76V529.4a2.52 2.52 0 0 0-3-2.22z m9-36.9H113.72a6.24 6.24 0 0 0-4.5 1.98l-8.7 10.8v1.92h189.12a3.48 3.48 0 0 0 3.78-2.46l3.24-9.48a1.98 1.98 0 0 0-0.3-2.76z m20.4-37.14l-141.6 0.3a5.46 5.46 0 0 0-4.44 1.98l-8.46 10.98v1.98H307.4a6.48 6.48 0 0 0 4.02-2.28l6.72-10.44c0-1.2 0-2.52-1.26-2.52z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Go
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Go
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/basic-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/flow-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/structs-and-maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structs and Maps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Packages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/concurrency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concurrency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/error-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/interfaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interfaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/generics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../go/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../java/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M385.997255 774.49022656s-36.74998031 21.37498875 26.06248594 28.49998407c76.12308375 8.62405781 114.93556313 7.49905875 198.74708062-8.43749532 0 0 22.12498781 13.874055 52.87403438 25.87404844-187.87208625 80.43651937-425.24414625-4.68749719-277.68360094-45.93747469m-22.87498781-105.18556875s-41.0624775 30.37498406 21.74998875 36.93748032c81.18651844 8.43749531 145.49804719 8.99999531 256.49611219-12.37499344 0 0 15.37499156 15.56249156 39.56247843 23.99998687-227.43456563 66.56058938-480.55661719 5.43749719-317.80857937-48.56247375m193.49708344-178.30959187c46.31247469 53.24903344-12.18749344 101.24807062-12.18749344 101.24807062s117.56149969-60.74902969 63.56246625-136.68555187c-50.43747281-70.87402406-89.06245219-106.12306781 120.18556031-227.43456469 0.1875 0-328.49513625 82.12495594-171.56053312 262.87204594m248.62205437 361.11918094s27.187485 22.31248781-29.81248406 39.74997843c-108.56056688 32.81248219-451.49319469 42.7499775-546.74220656 1.3125-34.31248125-14.8124925 29.99998406-35.62498125 50.24997375-39.93747937 20.99905125-4.49999719 33.18654469-3.74999813 33.18654468-3.74999719-38.06247938-26.81248594-246.18455531 52.68747187-105.74900625 75.37495875 382.87010719 62.24902875 698.24025-27.937485 598.86717844-72.74996062M403.62224563 560.36815344s-174.56053125 41.43654-61.87496625 56.4365325c47.62497469 6.37499625 142.49804812 4.87499719 230.80956281-2.43749907 72.18746156-5.99999719 144.74804719-19.12498969 144.74804718-19.12498968s-25.49998594 10.87499437-43.87497562 23.43748781c-177.18459187 46.68747469-519.36722063 24.93748688-420.93071156-22.68748781 83.43558-40.12497844 151.12304344-35.62498125 151.12304344-35.62498125M716.74239031 735.30274719c180.18552844-93.56151188 96.74901094-183.55958906 38.62497938-171.37303313-14.2499925 2.99999812-20.62498875 5.62499719-20.62498969 5.62499719s5.24999719-8.24999531 15.3749925-11.81249344c114.93556313-40.49904094 203.43457781 119.24899875-37.12498031 182.43552657 0-0.1875 2.81249813-2.62499812 3.74999812-4.87499719M607.99432344 32s99.74807156 99.74900906-94.68651188 253.12111406c-155.81054156 122.99899687-35.62498125 193.31052094 0 273.37204031-90.93651375-82.12495594-157.68554063-154.3105425-112.87306406-221.62206843C466.24627438 238.43457688 648.30586437 190.43553969 607.99432344 32M421.43379875 988.98729875c172.87303219 11.06249437 438.36913969-6.18749625 444.55663594-87.93745312 0 0-11.99999344 30.93748313-142.87304813 55.68747-147.56054531 27.749985-329.62013531 24.56248687-437.43163968 6.74999625 0-0.1875 22.12498781 18.18749062 135.74805187 25.49998687"></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Java
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_7" id="__nav_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Java
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/arrays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditionals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/collections-framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collections Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../java/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../javascript/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M632.29496889 651.95576889a197.14199666 197.14199666 0 0 1-106.16832-19.32098332 69.8565211 69.8565211 0 0 1-26.02021888-49.0306378 10.77703111 10.77703111 0 0 0-10.97121223-10.67993998 2273.1768411 2273.1768411 0 0 0-46.11792555 0 10.24303445 10.24303445 0 0 0-11.21393778 9.02940444 113.54718777 113.54718777 0 0 0 36.55452445 89.5173211 193.74383445 193.74383445 0 0 0 108.15867221 40.72941 391.37128334 391.37128334 0 0 0 122.96495446-5.24288 151.75224889 151.75224889 0 0 0 81.45881998-43.88484666 113.49864334 113.49864334 0 0 0 19.22389333-108.3043089 90.73095111 90.73095111 0 0 0-59.71057778-53.15697778c-62.13783666-21.84533333-129.32437333-20.14625223-192.72438443-36.74870442-11.01975666-3.39816334-24.46677333-7.18468779-29.36983779-18.83553224a41.50613333 41.50613333 0 0 1 13.78683335-46.36065223 124.17858333 124.17858333 0 0 1 65.536-16.31118222 197.57890333 197.57890333 0 0 1 91.41058332 13.1072 69.71088555 69.71088555 0 0 1 33.35054223 48.15682446 11.79648 11.79648 0 0 0 11.06830222 11.45666333c15.24318777 0.29127111 30.48637667 0.04854557 45.77811001 0.09708999a11.06830222 11.06830222 0 0 0 11.99065998-8.15559111 118.15898112 118.15898112 0 0 0-57.62313444-102.23616 285.44568889 285.44568889 0 0 0-156.21840554-23.93277554 170.15087445 170.15087445 0 0 0-105.63432334 42.47703666 105.58577778 105.58577778 0 0 0-21.06861 109.80920888 93.69220779 93.69220779 0 0 0 59.12803556 51.55498667c61.9922011 22.37932999 129.90691555 15.19464334 192.43311332 35.0010789 12.23338667 4.12634112 26.40858112 10.48576 30.14656 24.02986667a48.05973333 48.05973333 0 0 1-13.1072 45.92374442 144.1792 144.1792 0 0 1-87.04151666 21.31133668z m282.48443221-409.96408889q-181.46190222-102.6245211-363.06944-205.10340779a81.41027555 81.41027555 0 0 0-79.46846777 0L110.5313189 241.16641223a74.85667555 74.85667555 0 0 0-39.07887445 65.14763776v411.42044444a75.39067221 75.39067221 0 0 0 40.58377443 65.77872669c34.61271666 18.83553223 68.25452999 39.61287111 103.54688 57.23477333a148.74244779 148.74244779 0 0 0 132.91671779 3.64088889 103.25560889 103.25560889 0 0 0 48.30245888-93.25530112c0.24272555-135.78088334 0-271.56176555 0.09709-407.29410332a10.67994112 10.67994112 0 0 0-10.04885334-12.37902223 2017.29516999 2017.29516999 0 0 0-46.2635611 0 10.19448889 10.19448889 0 0 0-11.06830222 10.34012445c-0.19418112 134.90707001 0.04854557 269.81413888-0.09708999 404.76975331a45.63247445 45.63247445 0 0 1-29.61256335 42.8653989 74.37122333 74.37122333 0 0 1-60.19603-8.05850112l-96.21655666-54.37060664a11.50520889 11.50520889 0 0 1-6.5536-11.4081189V308.4500389a12.57320334 12.57320334 0 0 1 7.62159445-12.62174891q180.24827221-101.55652779 360.448-203.25868999a12.52465778 12.52465778 0 0 1 14.17519332 0l360.49654556 203.21014557a12.7188389 12.7188389 0 0 1 7.57304889 12.62174776v407.19701334a11.74793443 11.74793443 0 0 1-6.50505444 11.55375445q-177.48119666 100.39144334-355.20512 200.49161443c-5.6312411 3.10689223-12.33047666 8.20413667-18.93262222 4.36906667-31.0689189-17.57335666-61.65238557-35.82634667-92.62421333-53.54533888a10.00030777 10.00030777 0 0 0-11.16539335-0.67963335 253.30877667 253.30877667 0 0 1-42.81685334 20.00061668c-6.69923555 2.71852999-14.95191666 3.49525333-19.56370886 9.70903666a63.88546333 63.88546333 0 0 0 20.97152 15.04900778l108.54703331 62.76892444a79.12865223 79.12865223 0 0 0 80.34228224 2.2330789q180.87936-101.94488889 361.75872-204.0839589a75.53630777 75.53630777 0 0 0 40.58377443-65.73018112V306.31404999a74.75958557 74.75958557 0 0 0-37.76815445-64.32236999z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Javascript
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_8" id="__nav_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            Javascript
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditionals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/scope/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scope
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/arrays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/set/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/iterators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/promises/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Promises
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/async-await/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async-Await
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../javascript/requests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requests
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../php/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M773.216 420.896h-54.432l-21.216 136.128h51.456s63.552 2.976 63.552-87.744c2.976-54.432-39.36-48.384-39.36-48.384z m-465.888 0H252.8l-21.024 136.128h51.456s63.552 2.976 63.552-87.744c2.88-54.432-39.456-48.384-39.456-48.384z"
+         ></path>
+    <path d="M513.056 35.648A476.352 476.352 0 1 0 989.504 512 476.448 476.448 0 0 0 513.056 35.648zM280.064 605.408h-54.432l-15.072 87.648h-60.48l54.72-320.64h123.744c48 0 99.84 39.264 75.552 133.056-27.168 108.96-124.032 99.936-124.032 99.936z m266.208 0s15.072-75.552 21.216-127.008c2.976-21.216 15.072-57.6-15.072-57.6H491.84l-30.24 184.608h-57.6L452.48 281.6h60.48l-15.072 87.744h60.48s81.696-9.024 72.576 72.576c-9.024 78.624-27.264 163.2-27.264 163.2h-57.6z m199.584 0H691.52l-15.072 84.768h-60.48l54.432-320.64h123.936c48 0 99.84 39.264 75.552 133.056-27.072 111.84-123.936 102.816-123.936 102.816z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Php
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_9" id="__nav_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            Php
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/arrays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditionals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../php/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../postgres/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M717.12000031 32a405.36 405.36 0 0 0-110.20000031 16.12000031l-2.52 0.79999969A436.87999969 436.87999969 0 0 0 536 42.32C488.88000031 41.52000031 448.4 52.95999969 415.76 72.00000031 383.6 60.84000031 316.88 41.6 246.56 45.44 197.6 48.12000031 144.15999969 63.00000031 104.55999969 104.79999969 65.07999969 146.6 44.19999969 211.28 48.60000031 299.28000031c1.2 24.28000031 8.11999969 63.88000031 19.59999938 115.15999969s27.6 111.31999969 47.72000062 166.08c20.11999969 54.79999969 42.16000031 103.99999969 76.59999938 137.44000031 17.20000031 16.75999969 40.87999969 30.84 68.80000031 29.67999938 19.60000031-0.79999969 37.32-9.40000031 52.60000031-22.08 7.44 9.79999969 15.40000031 14.08000031 22.63999969 18.04000031 9.12 4.99999969 18 8.4 27.19999969 10.63999969 16.51999969 4.12000031 44.80000031 9.64000031 77.92000031 4.00000031 11.28-1.87999969 23.16-5.56000031 34.99999969-10.8 0.43999969 13.2 0.96 26.11999969 1.48000031 39.19999969 1.63999969 41.44000031 2.68000031 79.72000031 15.12 113.28 1.99999969 5.47999969 7.48000031 33.72 29.08000031 58.64000062 21.6 24.96 63.91999969 40.51999969 112.11999938 30.19999969 34.00000031-7.27999969 77.23999969-20.4 105.96-61.27999969 28.39999969-40.39999969 41.20000031-98.35999969 43.72000031-192.36a189.19999969 189.19999969 0 0 1 2.20000031-13.44l6.75999938 0.6h0.80000062c36.28000031 1.63999969 75.64000031-3.52000031 108.51999938-18.80000062 29.11999969-13.48000031 51.16000031-27.12 67.2-51.31999969 4.00000031-6 8.4-13.24000031 9.6-25.72000031s-5.95999969-31.99999969-17.83999969-40.99999969c-23.80000031-18.07999969-38.76-11.20000031-54.79999969-7.87999969a250.8 250.8 0 0 1-48.08000062 5.83999969c46.24000031-77.88 79.39999969-160.60000031 98.32000031-233.80000031 11.20000031-43.2 17.47999969-83.04 18-117.87999938 0.52000031-34.84000031-2.32000031-65.68000031-23.20000031-92.36000062C886.4 56 794.67999969 32.96 723.72000031 32.16000031c-2.20000031-0.04000031-4.39999969-0.07999969-6.6-0.04000031z m-1.88000062 25.60000031c67.12000031-0.64000031 152.88 18.19999969 214.44 96.87999938 13.84000031 17.68000031 17.95999969 43.51999969 17.48000062 75.36-0.52000031 31.8-6.40000031 69.88000031-17.16 111.6-20.88 80.80000031-60.31999969 175.00000031-115.88000062 259.52000062a30.24 30.24 0 0 0 6.32000062 3.43999969c11.59999969 4.8 38.04 8.92000031 90.79999969-1.92 13.27999969-2.80000031 22.99999969-4.68 33.07999969 3a20.80000031 20.80000031 0 0 1 7.32 16.99999969 28.15999969 28.15999969 0 0 1-5.19999938 13.44c-10.2 15.31999969-30.31999969 29.83999969-56.12000062 41.80000031-22.84000031 10.63999969-55.60000031 16.2-84.63999938 16.51999969-14.56000031 0.16000031-28.00000031-0.96-39.40000031-4.51999969l-0.72-0.28000031c-4.39999969 42.40000031-14.52 126.12-21.12 164.32000031-5.28 30.79999969-14.52 55.27999969-32.16 73.60000031-17.59999969 18.31999969-42.52000031 29.35999969-76.03999969 36.55999969-41.52 8.92000031-71.80000031-0.67999969-91.32-17.11999969-19.48000031-16.39999969-28.39999969-38.16-33.76000031-51.48-3.67999969-9.19999969-5.59999969-21.12-7.44-37.04000062-1.84000031-15.91999969-3.19999969-35.4-4.12000031-57.36a2057.04 2057.04 0 0 1-1.2-100.92 122.44000031 122.44000031 0 0 1-62.07999938 30.40000031c-27.55999969 4.68-52.15999969 0.07999969-66.84-3.6a91.03999969 91.03999969 0 0 1-20.80000031-8.04c-6.79999969-3.64000031-13.27999969-7.75999969-17.59999969-15.88000031a22.39999969 22.39999969 0 0 1-2.28-15.24 24.40000031 24.40000031 0 0 1 8.71999969-13.23999938c7.92-6.43999969 18.40000031-10.03999969 34.2-13.32 28.75999969-5.92000031 38.80000031-9.96 44.92000031-14.80000031 5.20000031-4.15999969 11.08000031-12.55999969 21.48-24.88000031a46.39999969 46.39999969 0 0 1-0.12-1.63999969 118.39999969 118.39999969 0 0 1-53.20000031-14.32000031c-6 6.31999969-36.64000031 38.71999969-73.99999969 83.68000031-15.72 18.79999969-33.07999969 29.59999969-51.40000031 30.36-18.31999969 0.79999969-34.87999969-8.44000031-48.96-22.08-28.12000031-27.31999969-50.56000031-74.32000031-70.12000031-127.44-19.51999969-53.11999969-35.4-112.27999969-46.68-162.67999969-11.32000031-50.4-18-91.03999969-18.96-110.64-4.2-83.28 15.28000031-139.39999969 48.68000062-174.80000062 33.43999969-35.4 79.27999969-48.79999969 123.96-51.36 80.20000031-4.60000031 156.36 23.35999969 171.75999938 29.36000062 29.68000031-20.16 67.92-32.71999969 115.68-31.92a295.60000031 295.60000031 0 0 1 67.24000031 8.71999969l0.79999969-0.36a274.15999969 274.15999969 0 0 1 29.56000031-8.56000031A385.03999969 385.03999969 0 0 1 715.20000031 57.68z m6.08000062 26.79999938h-5.84000062a349.60000031 349.60000031 0 0 0-68.16 7.68c49.84000031 22.08 87.48 56.08000031 114 90a337.60000031 337.60000031 0 0 1 45.28000031 76.8c4.39999969 10.56 7.36000031 19.48000031 9.04000031 26.4 0.84 3.48 1.39999969 6.40000031 1.59999938 9.44000062a17.59999969 17.59999969 0 0 1-0.48 5.76c0 0.12-0.19999969 0.40000031-0.24 0.51999938 1.2 35.04-7.48000031 58.8-8.52 92.24000062-0.79999969 24.24 5.4 52.72000031 6.92000062 83.79999938 1.44 29.20000031-2.08000031 61.27999969-21.04000031 92.76 1.60000031 1.92 3.04000031 3.84 4.56 5.76 50.16-79.00000031 86.32000031-166.39999969 105.6-240.91999969 10.32-40.12000031 15.79999969-76.48000031 16.27999969-105.28000031 0.40000031-28.8-4.96000031-49.68-11.79999938-58.39999969-53.68000031-68.64-126.31999969-86.11999969-187.2-86.59999969z m-191.60000062 10.24000031c-47.28 0.12-81.19999969 14.4-106.92 35.80000031-26.52 22.12000031-44.32000031 52.39999969-55.99999969 83.4-13.87999969 36.79999969-18.64000031 72.40000031-20.52 96.55999969l0.52000031-0.31999969c14.28-7.99999969 33.04000031-16.00000031 53.11999969-20.64 20.08000031-4.60000031 41.71999969-6.04000031 61.32 1.56s35.80000031 25.48000031 41.68000031 52.59999938c28.15999969 130.27999969-8.76 178.72000031-22.36000031 215.28a384.40000031 384.40000031 0 0 0-13.24000031 40.52000062c1.72000031-0.40000031 3.43999969-0.88000031 5.16-1.04000062 9.6-0.79999969 17.11999969 2.4 21.6 4.32 13.68 5.68000031 23.08000031 17.59999969 28.16000062 31.2 1.32 3.55999969 2.28 7.39999969 2.83999969 11.36000062a13.44 13.44 0 0 1 0.79999969 5.07999938 2205.6 2205.6 0 0 0 0.52000031 149.52c0.91999969 21.52000031 2.28 40.48000031 4.00000031 55.44 1.72000031 14.92000031 4.15999969 26.28 5.71999969 30.12 5.11999969 12.79999969 12.6 29.56000031 26.11999969 40.96000031 13.51999969 11.35999969 32.92000031 18.96 68.36000062 11.35999969 30.72-6.6 49.68-15.76000031 62.35999969-28.92 12.64000031-13.15999969 20.20000031-31.48000031 25.03999969-59.52 7.24000031-42 21.79999969-163.8 23.56000031-186.72-0.79999969-17.28 1.75999969-30.55999969 7.27999969-40.68 5.68000031-10.39999969 14.47999969-16.75999969 22.08-20.19999938 3.79999969-1.72000031 7.36000031-2.88 10.28000062-3.72a238.24000031 238.24000031 0 0 0-9.72-13.00000031 178.24000031 178.24000031 0 0 1-26.64-43.96000031 331.84000031 331.84000031 0 0 0-10.28000062-19.32c-5.32000031-9.6-12.04000031-21.6-19.08-35.07999938-14.08000031-27-29.4-59.71999969-37.35999938-91.60000031-7.92-31.84000031-9.07999969-64.8 11.23999969-88.03999969 18-20.64 49.60000031-29.20000031 97.03999969-24.40000031-1.39999969-4.2-2.23999969-7.68-4.59999938-13.27999969a312.67999969 312.67999969 0 0 0-41.64-70.56c-40.2-51.40000031-105.28000031-102.36-205.84000031-104.00000062h-4.60000031z m-265.68 2.08000031c-5.08000031 0-10.15999969 0.16000031-15.19999969 0.43999969-40.39999969 2.32000031-78.6 14.04-105.91999969 43.00000031-27.36 28.96000031-45.36 76.44-41.44000031 155.04 0.76000031 14.88 7.24000031 56.56000031 18.36 106.08 11.08000031 49.51999969 26.80000031 107.80000031 45.67999969 159.27999938 18.91999969 51.48 41.83999969 96.28000031 63.6 117.48 10.96000031 10.60000031 20.47999969 14.88 29.12000062 14.52 8.68000031-0.40000031 19.12000031-5.4 31.87999969-20.71999969a1729.75999969 1729.75999969 0 0 1 72.40000031-81.91999969 139.87999969 139.87999969 0 0 1-46.68-126c4.12000031-29.56000031 4.68-57.19999969 4.2-79.04000062-0.48-21.28000031-1.99999969-35.44000031-2.00000062-44.28a13.44 13.44 0 0 1 0-0.75999938v-0.20000062l-0.03999938-0.24v-0.03999938a395.71999969 395.71999969 0 0 1 23.67999938-135.04000031c11.20000031-29.76 27.88000031-60 52.88000062-84.48-24.55999969-8.08000031-68.16-20.4-115.36000031-22.72000031a304.12000031 304.12000031 0 0 0-15.19999969-0.39999938zM759.96000031 308c-27.16000031 0.36-42.40000031 7.36000031-50.4 16.51999969-11.32000031 13.00000031-12.40000031 35.80000031-5.36000062 63.88000031 7.00000031 28.12000031 21.48 59.56000031 35.08000031 85.68 6.79999969 13.08 13.39999969 24.84 18.72 34.39999969 5.35999969 9.6 9.28000031 16.39999969 11.68000031 22.2 2.20000031 5.35999969 4.63999969 10.08 7.11999938 14.48000062 10.51999969-22.2 12.40000031-43.99999969 11.32000031-66.72-1.39999969-28.12000031-7.92-56.88-6.96-86.00000062 1.08-34.03999969 7.8-56.20000031 8.4-82.51999969a231.72 231.72 0 0 0-29.59999969-1.92z m-329.36000062 4.60000031a112.8 112.8 0 0 0-24.63999938 2.95999969 186.6 186.6 0 0 0-46.12000031 17.95999969 96.67999969 96.67999969 0 0 0-13.96000031 9.12l-0.87999938 0.80000062c0.24 5.83999969 1.39999969 19.99999969 1.87999969 40.83999938 0.48 22.8-0.07999969 51.88000031-4.48000031 83.36000062-9.55999969 68.4 40.08 125.04 98.4 125.11999969 3.40000031-14.04 9-28.27999969 14.60000062-43.27999969 16.24000031-43.75999969 48.19999969-75.67999969 21.27999938-200.24000062-4.39999969-20.4-13.12000031-28.63999969-25.11999938-33.27999938a58.96000031 58.96000031 0 0 0-20.96000062-3.36z m316.68 8.16h2.00000062a35.11999969 35.11999969 0 0 1 7.2 0.87999938c2.16 0.48 4.00000031 1.2 5.52 2.20000031a6.55999969 6.55999969 0 0 1 3 4.39999969l-0.04000031 0.32000062h0.04000031-0.04000031a9.6 9.6 0 0 1-1.39999969 5.4 26.71999969 26.71999969 0 0 1-4.40000062 6 27.07999969 27.07999969 0 0 1-15.43999969 8.47999969 23.59999969 23.59999969 0 0 1-16.39999969-4.12000031 24.31999969 24.31999969 0 0 1-5.20000031-4.71999938 10.39999969 10.39999969 0 0 1-2.52-5.08000031 6.79999969 6.79999969 0 0 1 1.68-5.11999969 15.36 15.36 0 0 1 4.68-3.6c3.84-2.16 9.04000031-3.76000031 14.92000031-4.64000062 2.20000031-0.31999969 4.36000031-0.48 6.39999938-0.51999938z m-312.79999969 6.72c2.11999969 0 4.36000031 0.19999969 6.64000031 0.51999938 6.12 0.84 11.56000031 2.47999969 15.72 4.88000062a17.83999969 17.83999969 0 0 1 5.31999938 4.23999938 8.92000031 8.92000031 0 0 1 2.16 6.80000062 12.07999969 12.07999969 0 0 1-3 6.15999938 25.96000031 25.96000031 0 0 1-5.71999969 5.20000031 25.60000031 25.60000031 0 0 1-17.92000031 4.51999969 29.11999969 29.11999969 0 0 1-16.8-9.12 28.39999969 28.39999969 0 0 1-4.71999938-6.55999969 11.20000031 11.20000031 0 0 1-1.64000062-7.08c0.6-4.32 4.15999969-6.55999969 7.64000062-7.8a34.63999969 34.63999969 0 0 1 12.27999938-1.60000031z m362.4 293.71999969l-0.12 0.04000031c-5.88 2.11999969-10.72000031 3-14.80000031 4.8a18.07999969 18.07999969 0 0 0-9.55999969 8.55999938c-2.52 4.60000031-4.68 12.76000031-4.03999969 26.64a20.4 20.4 0 0 0 5.91999938 2.80000031c6.84 2.08000031 18.31999969 3.43999969 31.12000031 3.24 25.51999969-0.28000031 56.92000031-6.24 73.60000031-13.99999969a157.99999969 157.99999969 0 0 0 37.71999938-24.6h-0.03999938c-55.72000031 11.52-87.19999969 8.44000031-106.52000062 0.48a52.60000031 52.60000031 0 0 1-13.27999969-8.00000062z m-321.24 3.76000031h-0.84c-2.11999969 0.19999969-5.20000031 0.91999969-11.16 7.51999969-13.92 15.6-18.79999969 25.39999969-30.28000031 34.56-11.47999969 9.12-26.4 13.99999969-56.19999938 20.11999969a76.72000031 76.72000031 0 0 0-18.44000062 5.76c1.15999969 0.96 1.03999969 1.2 2.80000031 2.12000062 4.36000031 2.4 9.96 4.51999969 14.47999969 5.67999938 12.79999969 3.19999969 33.84 6.91999969 55.8 3.20000062 21.96-3.76000031 44.80000031-14.28 64.28000062-41.60000062 3.36-4.72000031 3.72-11.68000031 0.96-19.15999969-2.80000031-7.48000031-8.92000031-13.92-13.24000031-15.72a26.11999969 26.11999969 0 0 0-8.16-2.4z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Postgres
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_10" id="__nav_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            Postgres
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../postgres/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../postgres/basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../postgres/commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../postgres/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../postgres/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_11" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M360.19920592 495.1451117a158.53886578 158.53886578 0 0 1 28.12222578-2.52677688l-7.5779034-0.0364089h252.00533807a116.80457008 116.80457008 0 0 0 31.33106252-4.25741274c47.01601185-13.01739141 80.93696-54.70314192 80.93696-105.98142103V170.62783052c0-60.27370192-51.33653333-105.54694163-112.35540386-115.5521043-38.66866725-6.3691283-95.289344-9.28912118-133.71528533-9.09979497-38.42108682 0.2087443-75.19891911 3.407872-107.47175822 9.09979497-95.15341748 16.56118992-112.49133037 51.39721482-112.49133037 115.5521043V240.14696297h233.01688889v38.83614814H203.30116741c-86.47839289 0-156.65045808 103.33085392-157.31795438 231.17702637-0.00485452 0.61409659-0.01699082 1.22576592-0.01699081 1.83986252 0 23.11478992 2.2816237 45.43829333 6.51719111 66.51661275C71.81167882 674.79627852 132.01499022 745.01688889 203.30116741 745.01688889H240.14696297v-111.49615407c0-65.11608415 48.89956503-125.56940325 120.05224295-138.37562312z m24.74833541-296.25670162c-23.28227082 0-42.19547497-18.89621333-42.19547496-42.2415929 0-23.45703348 18.86951348-42.52558222 42.19547496-42.52558221 23.23858015 0 42.23188385 19.06612148 42.23188385 42.52558221 0.00242725 23.34537955-18.95446755 42.24159289-42.23188385 42.2415929z"
+         ></path>
+    <path d="M968.20580503 430.79118697C945.94541037 342.1428243 888.30528475 278.98311111 820.69883259 278.98311111H783.85303703v98.72148859c0 82.32049778-54.09389985 141.93155792-120.12263348 152.14303763a130.93364622 130.93364622 0 0 1-20.1486791 1.56800949H391.48900503a124.78539852 124.78539852 0 0 0-31.67330606 4.05837748C313.40164741 547.65401125 278.98311111 586.27413333 278.98311111 636.36305541v211.72254341c0 60.27370192 60.62565452 95.69712355 120.10321541 112.99134577 71.1842323 20.70694875 148.71089303 24.43764622 233.90526578 0C689.55401482 944.91139792 745.01688889 912.23806103 745.01688889 848.08559882V783.85303703H512v-38.83614814h308.69883259c61.2640237 0 114.34090192-51.85839408 140.32956682-127.55004681C971.90252089 585.79839052 978.03377778 549.96476208 978.03377778 512c0-28.56398697-3.47826252-55.91919882-9.82797275-81.20881303zM637.894656 819.82501925c23.2774163 0 42.18819318 18.89621333 42.18819318 42.23431112 0 23.42305185-18.91077689 42.52800948-42.18819318 42.52800948-23.24586192 0-42.23188385-19.10495763-42.23188385-42.52800948 0-23.37450667 18.94718578-42.23431111 42.23188385-42.23431112z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_11" id="__nav_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-in-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Built-in Data Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced Data Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f-strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F-Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      Append
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Slicing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List Slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omitting-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Omitting index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-a-stride" class="md-nav__link">
+    <span class="md-ellipsis">
+      With a stride
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concatenating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concatenating
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sort-reverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sort &amp; Reverse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repeating
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flow-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Handling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes-and-inheritance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Inheritance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type-hints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Hints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ruby/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+  <path d="M26.875.109c4.043.703 5.193 3.464 5.104 6.36L32 6.426l-1.817 23.855-23.641 1.62c-1.963-.084-6.344-.261-6.541-6.38l2.193-4 3.76 8.781.672 1.561 3.739-12.192-.041.011.021-.043 12.339 3.944-1.86-7.245-1.317-5.199 11.755-.76-.817-.677-8.443-6.885 4.88-2.719zM0 25.453v.031-.036zM6.839 6.765c4.749-4.713 10.875-7.495 13.229-5.12 2.348 2.371-.141 8.141-4.896 12.844-4.751 4.713-10.803 7.647-13.151 5.276-2.355-2.364.057-8.287 4.817-13z"></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Ruby
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_12" id="__nav_1_12_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            Ruby
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/flow-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Methods
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/blocks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blocks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/procs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Procs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/lambdas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lambdas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/arrays/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/boolean-enumerable-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Boolean Enumerable Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/combination-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combination Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ruby/see-also/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    See Also
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../rust/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M979.47999969 500.36l-39.79999969-24.64000031a542.35999969 542.35999969 0 0 0-1.12000031-11.59999969l34.2-31.87999969a13.75999969 13.75999969 0 0 0-4.56-22.84000031l-43.71999938-16.36000031a335.68000031 335.68000031 0 0 0-3.44000062-11.28l27.28000031-37.87999969a13.68 13.68 0 0 0-8.92000031-21.52000031l-46.08-7.47999938a369.72 369.72 0 0 0-5.55999938-10.36000031l19.35999938-42.52000031c1.99999969-4.32 1.56-9.36-1.08-13.27999969s-7.12000031-6.24-11.88-6.07999969l-46.8 1.63999969a266.47999969 266.47999969 0 0 0-7.39999969-8.95999969l10.75999969-45.56000062a13.72000031 13.72000031 0 0 0-16.47999938-16.47999938l-45.56000062 10.75999969a553.87999969 553.87999969 0 0 0-9-7.39999969l1.64000062-46.8a13.60000031 13.60000031 0 0 0-19.36000031-12.96l-42.52000031 19.39999969c-3.43999969-1.87999969-6.88000031-3.76000031-10.35999938-5.56000031l-7.52000062-46.11999938a13.75999969 13.75999969 0 0 0-21.51999938-8.92000031l-37.92 27.28000031a335.32000031 335.32000031 0 0 0-11.28-3.40000031L614.48 55.83999969a13.75999969 13.75999969 0 0 0-22.84000031-4.56l-31.87999969 34.24000031a367.2 367.2 0 0 0-11.59999969-1.12000031l-24.64000031-39.79999969a13.68 13.68 0 0 0-23.28 0l-24.64000031 39.79999969c-3.88000031 0.31999969-7.75999969 0.72-11.59999969 1.12000031l-31.92-34.24000031a13.68 13.68 0 0 0-22.84000031 4.56l-16.35999938 43.72000031c-3.79999969 1.08-7.51999969 2.23999969-11.28 3.40000031l-37.88000062-27.28000031a13.75999969 13.75999969 0 0 0-21.51999938 8.92000031l-7.52000062 46.11999938a369.72 369.72 0 0 0-10.35999938 5.56000031l-42.52000031-19.39999969a13.68 13.68 0 0 0-19.36000031 12.96l1.64000062 46.8c-3.04000031 2.4-6.04000031 4.87999969-9 7.39999969l-45.56000062-10.75999969a13.72000031 13.72000031 0 0 0-16.47999938 16.47999938l10.71999938 45.56000062c-2.47999969 2.95999969-4.96000031 5.95999969-7.35999938 8.95999969l-46.8-1.63999969a13.68 13.68 0 0 0-12.96 19.35999938l19.39999969 42.52000031a362.20000031 362.20000031 0 0 0-5.56000031 10.36000031l-46.08 7.47999938a13.75999969 13.75999969 0 0 0-8.91999938 21.52000031l27.27999938 37.87999969c-1.2 3.76000031-2.32000031 7.48000031-3.43999969 11.28L55.59999969 409.4a13.75999969 13.75999969 0 0 0-4.56 22.84000031l34.2 31.87999969a367.2 367.2 0 0 0-1.11999938 11.59999969l-39.80000062 24.64000031a13.60000031 13.60000031 0 0 0 0 23.28l39.80000062 24.64000031c0.31999969 3.88000031 0.72 7.75999969 1.11999938 11.59999969l-34.2 31.92a13.68 13.68 0 0 0 4.56 22.84000031l43.72000031 16.35999938c1.08 3.79999969 2.23999969 7.56 3.43999969 11.28l-27.27999938 37.88000062a13.63999969 13.63999969 0 0 0 8.95999969 21.51999938l46.08 7.48000031c1.8 3.48 3.64000031 6.91999969 5.56000031 10.36000031l-19.40000062 42.51999938a13.68 13.68 0 0 0 12.96 19.36000031l46.76000062-1.63999969c2.44000031 3.04000031 4.87999969 6.04000031 7.39999969 9l-10.72000031 45.6a13.68 13.68 0 0 0 16.48000031 16.44l45.55999969-10.72000031c2.95999969 2.52 5.95999969 4.96000031 9 7.36000031l-1.63999969 46.8a13.60000031 13.60000031 0 0 0 19.36000031 12.91999969l42.51999938-19.36000031c3.43999969 1.92 6.88000031 3.76000031 10.36000031 5.56000031l7.51999969 46.08a13.75999969 13.75999969 0 0 0 21.52000031 8.95999969l37.87999969-27.27999938c3.76000031 1.2 7.48000031 2.35999969 11.28 3.43999969l16.36000031 43.72000031a13.63999969 13.63999969 0 0 0 22.84000031 4.56l31.92-34.2c3.84 0.43999969 7.72000031 0.79999969 11.59999969 1.15999969l24.64000031 39.79999969a13.72000031 13.72000031 0 0 0 23.28 0l24.63999938-39.79999969c3.88000031-0.36 7.75999969-0.72 11.60000062-1.15999969l31.87999969 34.2a13.75999969 13.75999969 0 0 0 22.84000031-4.56l16.35999938-43.72000031c3.79999969-1.08 7.56-2.23999969 11.28-3.43999969l37.88000062 27.27999938a13.63999969 13.63999969 0 0 0 21.51999938-8.95999969l7.52000062-46.08c3.48-1.8 6.91999969-3.67999969 10.35999938-5.56000031l42.52000031 19.36000031a13.72000031 13.72000031 0 0 0 19.36000031-12.91999969l-1.64000062-46.8c3.04000031-2.4 6.04000031-4.84000031 8.96000062-7.36000031l45.55999969 10.72000031a13.72000031 13.72000031 0 0 0 16.48000031-16.44l-10.72000031-45.6c2.47999969-2.95999969 4.96000031-5.95999969 7.36000031-9l46.8 1.63999969a13.60000031 13.60000031 0 0 0 12.96-19.36000031l-19.36000031-42.51999938c1.87999969-3.43999969 3.76000031-6.88000031 5.56000031-10.36000031l46.08-7.48000031a13.75999969 13.75999969 0 0 0 8.91999938-21.51999938l-27.27999938-37.88000062 3.43999969-11.28 43.72000031-16.35999938a13.68 13.68 0 0 0 4.56-22.84000031l-34.2-31.92c0.40000031-3.84 0.79999969-7.72000031 1.11999938-11.59999969l39.80000062-24.64000031a13.60000031 13.60000031 0 0 0 0-23.28z m-266.35999969 330.12a28.2 28.2 0 0 1 11.80000031-55.15999969 28.2 28.2 0 1 1-11.84000062 55.15999969z m-13.51999969-91.44a25.63999969 25.63999969 0 0 0-30.48 19.75999969l-14.12000062 65.92000031c-43.60000031 19.8-91.99999969 30.79999969-142.99999969 30.79999969a345.19999969 345.19999969 0 0 1-145.99999969-32.16l-14.12000062-65.91999938a25.60000031 25.60000031 0 0 0-30.48-19.72000031l-58.2 12.48a344.59999969 344.59999969 0 0 1-30.07999969-35.47999969h283.2c3.19999969 0 5.35999969-0.55999969 5.35999969-3.48v-100.2c0-2.92000031-2.11999969-3.48-5.35999969-3.48h-82.84000031v-63.52000031h89.60000062c8.16 0 43.72000031 2.32000031 55.08 47.76 3.55999969 13.96000031 11.35999969 59.44000031 16.71999938 73.99999969 5.32000031 16.32 27 48.91999969 50.12000062 48.92000062h141.12a29.59999969 29.59999969 0 0 0 5.11999969-0.52000031 347.20000031 347.20000031 0 0 1-32.08000031 37.63999969l-59.55999938-12.79999969z m-391.72000031 90.07999969a28.2 28.2 0 1 1-11.83999969-55.15999969 28.2 28.2 0 0 1 11.83999969 55.15999969zM200.43999969 393.44a28.2 28.2 0 1 1-51.51999938 22.87999969 28.2 28.2 0 0 1 51.51999938-22.87999969z m-33 78.28000031l60.64000031-26.96000062a25.68 25.68 0 0 0 13.03999969-33.91999969l-12.48-28.24000031h49.12000031v221.36000062H178.68000031a346.72000031 346.72000031 0 0 1-11.20000031-132.28000031z m266.08000031-21.48V384.99999969h116.95999969c6.04000031 0 42.64000031 7.00000031 42.64000031 34.36000031 0 22.72000031-28.08 30.88000031-51.16000031 30.88000031h-108.43999969z m425.04 58.71999938c0 8.64-0.31999969 17.23999969-0.96 25.72000031h-35.56000031c-3.55999969 0-4.99999969 2.32000031-4.99999969 5.83999969v16.32c0 38.44000031-21.67999969 46.8-40.68 48.92000062-18.07999969 2.04-38.11999969-7.56-40.60000031-18.64000031-10.68-60-28.44-72.84-56.52-94.96000031 34.84000031-22.12000031 71.08000031-54.76000031 71.08000031-98.43999938 0-47.16-32.35999969-76.87999969-54.40000031-91.48000031-30.91999969-20.4-65.16-24.48-74.4-24.48H253.80000031a346.32 346.32 0 0 1 193.87999969-109.44l43.36000031 45.48a25.60000031 25.60000031 0 0 0 36.27999938 0.84l48.48-46.39999969a346.72000031 346.72000031 0 0 1 237.24 168.96l-33.19999969 75a25.75999969 25.75999969 0 0 0 13.03999969 33.91999969l63.92000062 28.39999969c1.12000031 11.35999969 1.68 22.8 1.68 34.44z m-367.48000031-379.27999969a28.12000031 28.12000031 0 1 1 38.88 40.75999969 28.2 28.2 0 0 1-38.88-40.75999969z m329.48000062 265.12000031a28.08 28.08 0 0 1 37.11999938-14.32000031 28.2 28.2 0 1 1-37.15999969 14.35999969z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Rust
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_13" id="__nav_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            Rust
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/flow-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flow Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rust/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_14" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../swift/" class="md-nav__link ">
+              
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="1em" height="1em" viewBox="0 0 150 150">
+    <path d="M149.996652,41.5504118 C149.996652,40.0404009 149.969865,38.5370862 149.929684,37.0237271 C149.889479,33.7232863 149.600703,30.4305622 149.065807,27.1735006 C148.507382,23.9127729 147.466929,20.7532587 145.978615,17.7987099 C142.956518,11.8649909 138.1316,7.04156844 132.19675,4.0211156 C129.242865,2.53082012 126.082821,1.49033249 122.821331,0.934130935 C119.563242,0.396319522 116.269046,0.106431705 112.967097,0.066962791 C111.456985,0.0267851164 109.953569,0.0100444187 108.440109,0 L41.5565427,0 C40.0464306,0 38.5430153,0.0267851164 37.0295549,0.066962791 C36.2092058,0.0903997679 35.3855083,0.117184884 34.5618108,0.157362559 C32.0854761,0.256798914 29.6181641,0.516263128 27.1753203,0.934130935 C24.7417426,1.35877149 22.3608012,2.04348485 20.0734408,2.97649606 C19.3010849,3.30014955 18.5410063,3.64835606 17.7932051,4.0211156 C15.5863952,5.15055914 13.519722,6.53499141 11.6355641,8.14602353 C11.0060717,8.68507399 10.4000179,9.2442133 9.81740256,9.8200933 C7.47219368,12.1591083 5.51152349,14.8541431 4.00799143,17.8054061 C2.51889323,20.7596305 1.47840127,23.9192644 0.920800036,27.1801969 C0.390726031,30.4353902 0.106428217,33.7258611 0.0703156391,37.0237271 C0.0267869101,38.5337381 0.0100450913,40.0370527 0,41.5504118 L0,108.456284 C0,109.966295 0.0267869101,111.46961 0.0703156391,112.979621 C0.110229315,116.280076 0.39900748,119.572822 0.934193491,122.829848 C1.49106583,126.090961 2.53159273,129.250701 4.02138488,132.204638 C7.04518753,138.133686 11.8652306,142.95575 17.7932051,145.982233 C20.747852,147.46998 23.9076759,148.509267 27.1686236,149.065869 C30.4267126,149.60368 33.7209094,149.893568 37.0228582,149.933037 C38.5296219,149.973215 40.0363856,149.989956 41.549846,150 L108.446806,150 C109.956918,150 111.460333,149.973215 112.973793,149.933037 C116.276759,149.891708 119.571929,149.601833 122.831376,149.065869 C126.092204,148.508782 129.251957,147.469519 132.206795,145.982233 C138.136507,142.956565 142.95707,138.132809 145.978615,132.20129 C147.468407,129.247353 148.508934,126.087613 149.065807,122.826499 C149.603754,119.569766 149.893662,116.276895 149.933033,112.976273 C149.973213,111.46961 149.989955,109.962947 150,108.452936 L150,46.9241758 C149.996652,45.1329211 149.996652,43.3416665 149.996652,41.5504118 Z M126.598286,122.240575 C119.901558,109.206268 107.4356,112.440571 101.046922,115.721747 C100.471003,116.056561 99.8816911,116.391375 99.2890308,116.726189 L99.1483995,116.809893 C85.9223626,123.840986 68.1659896,124.356599 50.312514,116.682663 C35.779112,110.381458 23.4900254,99.8344883 15.0575919,86.4255262 C19.1601349,89.4606647 23.5534617,92.08168 28.1731327,94.2501283 C47.0445109,103.089217 66.0096433,102.449722 79.4030984,94.2501283 C60.3174249,79.5685364 44.3792134,60.4339189 32.161034,44.9588179 C29.8334165,42.2434232 27.7304143,39.3433109 25.8728068,36.2871364 C40.5051565,49.6796946 63.6088665,66.4940515 71.9061119,71.1479654 C54.3037636,52.5691391 38.7941426,29.6511239 39.5207375,30.3877146 C67.2418412,58.3178947 92.819992,74.1110689 92.819992,74.1110689 C93.7843207,74.640075 94.4941738,75.0652887 95.0734408,75.4503248 C95.6092689,74.0835027 96.0741937,72.6899392 96.4663601,71.2751948 C100.892897,55.0936363 95.9105317,36.5951653 84.6432876,21.3209527 C110.355373,36.7491797 125.553596,66.075534 119.32564,90.8785518 C119.178312,91.45778 119.007545,92.0169193 118.843475,92.5827548 C131.741372,108.452936 128.232287,125.451441 126.588241,122.243923 L126.598286,122.240575 Z"></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Swift
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_14" id="__nav_1_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            Swift
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/conditions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/cycle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/arrays-and-collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arrays and Collections
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/dictionary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dictionary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/enumerate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enumerate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/extensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extensions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/generics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../swift/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_15" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../typescript/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     fill="currentColor" width="1em" height="1em">
+    <path d="M0 512v512h1024V0H0z m825.216-40.789333c26.026667 6.485333 45.824 18.048 64.042667 36.906666 9.429333 10.069333 23.424 28.416 24.533333 32.853334 0.341333 1.28-44.202667 31.146667-71.168 47.914666-0.981333 0.64-4.906667-3.584-9.258667-10.069333-13.226667-19.2-27.008-27.477333-48.128-28.928-31.061333-2.133333-51.029333 14.122667-50.858666 41.258667a37.546667 37.546667 0 0 0 4.352 19.2c6.826667 14.122667 19.541333 22.613333 59.306666 39.808 73.344 31.573333 104.704 52.352 124.202667 81.92 21.76 32.981333 26.666667 85.674667 11.861333 124.842666-16.213333 42.581333-56.533333 71.509333-113.28 81.066667-17.536 3.114667-59.136 2.645333-77.994666-0.768-41.130667-7.338667-80.128-27.648-104.192-54.314667-9.429333-10.368-27.818667-37.546667-26.666667-39.466666a67.413333 67.413333 0 0 1 9.386667-6.016c4.608-2.602667 21.802667-12.544 38.058666-21.973334l29.44-17.066666 6.186667 9.130666c8.618667 13.141333 27.434667 31.189333 38.826667 37.205334 32.682667 17.237333 77.525333 14.805333 99.626666-5.034667a37.674667 37.674667 0 0 0 13.354667-30.72c0-11.861333-1.493333-17.066667-7.68-26.026667-7.936-11.349333-24.192-20.906667-70.357333-40.96-52.821333-22.741333-75.562667-36.864-96.384-59.306666a135.04 135.04 0 0 1-28.117334-51.2c-3.882667-14.464-4.864-50.730667-1.792-65.322667 10.88-51.072 49.408-86.613333 105.002667-97.194667 18.048-3.413333 59.989333-2.133333 77.696 2.261334z m-240.384 42.752l0.341333 41.941333H451.84v378.709333H357.546667v-378.709333H224.341333v-41.130667c0-22.784 0.469333-41.813333 1.109334-42.24 0.512-0.682667 81.621333-1.024 179.925333-0.853333l178.986667 0.512z"></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Typescript
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_15" id="__nav_1_15_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_15">
+            <span class="md-nav__icon md-icon"></span>
+            Typescript
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/basic-datatypes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Datatypes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/union-and-intersection-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Union And Intersection Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/utility-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utility Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/decorators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decorators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../typescript/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_16" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../vim/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1088 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M618.8770797 645.67402192c1.63111822 1.63111822 4.85451852 4.07779555 7.30119585 4.07779556h43.0692883c2.44667733 0 5.67007763-2.44667733 7.30119585-4.07779556l11.37899141-12.19455051c1.63111822-1.63111822 2.44667733-3.26223645 2.44667734-4.85451852l12.19455052-41.43817007c0.81555911-4.07779555 0-8.11675497-2.44667734-10.5634323l-8.93231408-7.30119585c-1.63111822-1.63111822-4.85451852-0.81555911-7.30119585-0.81555912h-38.99149273l-2.44667734-2.44667733c-1.63111822 0-3.26223645-0.81555911-4.89335466 0.81555911l-15.45678697 9.74787319c-1.63111822 0-2.44667733 4.07779555-3.26223645 5.67007763l-13.01010963 39.80705185a11.34015525 11.34015525 0 0 0 2.44667733 12.19455052l10.5634323 11.3789914z m6.48563675 214.53088238l-3.26223645 0.81555911h-9.74787318l58.52607526-171.46159408c1.63111822-5.67007763-0.81555911-12.19455052-6.48563675-13.82566874l-3.26223644-0.81555911h-98.33312711a10.44692385 10.44692385 0 0 0-8.11675496 8.11675497l-5.67007764 20.31130547c-1.63111822 5.67007763 2.44667733 10.5634323 8.11675497 12.19455053l2.44667733-0.81555912h14.64122785l-59.34163436 169.83047585c-1.63111822 5.67007763 0.81555911 13.01010963 6.48563673 15.45678697l3.26223645 2.44667733h91.03193126c4.85451852 0 8.93231408-4.07779555 10.56343229-8.93231407l5.67007763-19.49574638a10.25274311 10.25274311 0 0 0-6.48563674-13.82566873z m431.54727822-160.08260267l-15.45678697-20.31130548V678.99543703c-2.44667733-2.44667733-4.85451852-4.85451852-8.11675495-4.85451851h-58.52607527c-3.26223645 0-5.67007763 3.26223645-8.11675496 4.85451851l-16.27234607 19.49574638h-25.20466015l-17.04906905-19.49574638v-0.81555911a10.01972622 10.01972622 0 0 0-8.11675495-4.07779555h-32.505856l164.16039822-164.16039822-183.6561446-182.02502637 164.16039823-169.01491675V85.77327408l-22.75798282-29.24361956h-332.35975585l-26.83577837 28.42806045v23.57354192L538.40858075 15.90704355l-62.56503467 60.93391645-19.49574638-20.31130548H128.02700325l-26.02021925 30.05917866v76.39070341l24.38910103 23.57354193h24.38910105v212.08420503L37.03390815 512.38836148l113.75107793 113.78991407v260.046848l42.25372917 23.57354193h94.25533157l73.94402607-77.20626251 175.53938963 175.53938962 117.82887348-117.82887348c0.81555911 3.26223645 3.26223645 4.07779555 7.30119585 5.67007764l3.26223645-1.63111823h76.3907034c4.89335467 0 8.93231408-0.81555911 9.74787319-4.85451852l5.67007763-16.23350992c1.63111822-5.67007763-0.81555911-10.5634323-6.48563674-12.19455053l-3.26223645 0.81555912h-3.26223644l27.65133748-86.9541357 18.68018726-18.68018727h40.62261096l-40.62261096 129.20786489c-1.63111822 5.67007763 1.63111822 8.93231408 7.30119585 11.37899141l3.26223644-1.63111822h73.94402608c4.07779555 0 8.11675497-0.81555911 9.74787318-4.85451853l6.48563674-14.64122784c2.44667733-5.67007763-0.81555911-10.5634323-5.67007762-13.01010963-0.81555911-0.81555911-2.44667733 0-4.07779555 0h-3.26223645l34.13697422-105.63432296h49.55492503l-41.43817007 129.20786488c-1.63111822 5.67007763 1.63111822 8.93231408 7.30119585 10.5634323l3.26223645-2.44667733h81.28405807c4.07779555 0 8.11675497-0.81555911 9.74787318-4.85451852l6.48563675-16.23350993c2.44667733-5.67007763-0.81555911-10.5634323-6.48563675-12.19455052-0.81555911-0.81555911-2.44667733 0.81555911-4.07779555 0.81555912h-5.67007763l45.51596563-150.33472949a13.39847111 13.39847111 0 0 0-0.81555911-11.37899141zM538.40858075 31.32499437l91.84749036 91.84749038v38.21476977l27.61250134 33.32141511h13.01010963l-235.65774697 227.540992V194.70866963h26.83577837l21.9424237-34.13697422V88.25878755l-1.63111821-2.44667733 56.07939792-54.4482797zM52.45185897 512.38836148l98.33312711-98.33312711v196.66625422L52.45185897 512.38836148z m316.12624592 311.27172741l474.57773036-487.58784 173.90827142 174.72383052-164.16039822 164.16039822h-0.81555912a14.21403022 14.21403022 0 0 0-5.67007763 4.07779555l-17.04906903 19.49574637h-23.57354192l-17.86462816-19.49574637c-1.63111822-2.44667733-4.89335467-4.85451852-8.11675496-4.85451851h-71.49734874a11.26248297 11.26248297 0 0 0-10.5634323 8.11675496l-6.48563674 20.31130548c-1.63111822 5.67007763 0.81555911 10.5634323 6.48563674 13.01010964h12.19455052l-52.00160236 153.59696592-122.72222816 123.53778725-166.60707556-169.01491674z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Vim
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_16" id="__nav_1_16_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_16">
+            <span class="md-nav__icon md-icon"></span>
+            Vim
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operators
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/text-objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/working-with-multiple-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with Multiple Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/search-and-replace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Search And Replace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/vimdiff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vimdiff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/also-see/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Also See
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../clean-code/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Clean Code
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Clean Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../clean-code/python/" class="md-nav__link ">
+              
+  
+    <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1em" width="1em">
+    <path d="M360.19920592 495.1451117a158.53886578 158.53886578 0 0 1 28.12222578-2.52677688l-7.5779034-0.0364089h252.00533807a116.80457008 116.80457008 0 0 0 31.33106252-4.25741274c47.01601185-13.01739141 80.93696-54.70314192 80.93696-105.98142103V170.62783052c0-60.27370192-51.33653333-105.54694163-112.35540386-115.5521043-38.66866725-6.3691283-95.289344-9.28912118-133.71528533-9.09979497-38.42108682 0.2087443-75.19891911 3.407872-107.47175822 9.09979497-95.15341748 16.56118992-112.49133037 51.39721482-112.49133037 115.5521043V240.14696297h233.01688889v38.83614814H203.30116741c-86.47839289 0-156.65045808 103.33085392-157.31795438 231.17702637-0.00485452 0.61409659-0.01699082 1.22576592-0.01699081 1.83986252 0 23.11478992 2.2816237 45.43829333 6.51719111 66.51661275C71.81167882 674.79627852 132.01499022 745.01688889 203.30116741 745.01688889H240.14696297v-111.49615407c0-65.11608415 48.89956503-125.56940325 120.05224295-138.37562312z m24.74833541-296.25670162c-23.28227082 0-42.19547497-18.89621333-42.19547496-42.2415929 0-23.45703348 18.86951348-42.52558222 42.19547496-42.52558221 23.23858015 0 42.23188385 19.06612148 42.23188385 42.52558221 0.00242725 23.34537955-18.95446755 42.24159289-42.23188385 42.2415929z"
+         ></path>
+    <path d="M968.20580503 430.79118697C945.94541037 342.1428243 888.30528475 278.98311111 820.69883259 278.98311111H783.85303703v98.72148859c0 82.32049778-54.09389985 141.93155792-120.12263348 152.14303763a130.93364622 130.93364622 0 0 1-20.1486791 1.56800949H391.48900503a124.78539852 124.78539852 0 0 0-31.67330606 4.05837748C313.40164741 547.65401125 278.98311111 586.27413333 278.98311111 636.36305541v211.72254341c0 60.27370192 60.62565452 95.69712355 120.10321541 112.99134577 71.1842323 20.70694875 148.71089303 24.43764622 233.90526578 0C689.55401482 944.91139792 745.01688889 912.23806103 745.01688889 848.08559882V783.85303703H512v-38.83614814h308.69883259c61.2640237 0 114.34090192-51.85839408 140.32956682-127.55004681C971.90252089 585.79839052 978.03377778 549.96476208 978.03377778 512c0-28.56398697-3.47826252-55.91919882-9.82797275-81.20881303zM637.894656 819.82501925c23.2774163 0 42.18819318 18.89621333 42.18819318 42.23431112 0 23.42305185-18.91077689 42.52800948-42.18819318 42.52800948-23.24586192 0-42.23188385-19.10495763-42.23188385-42.52800948 0-23.37450667 18.94718578-42.23431111 42.23188385-42.23431112z"
+         ></path>
+</svg>
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../clean-code/python/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../clean-code/python/variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../clean-code/python/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../clean-code/python/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../clean-code/python/dry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Don't repeat yourself
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Community
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    <span class="md-ellipsis">
+      Append
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      List Slicing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List Slicing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omitting-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Omitting index
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-a-stride" class="md-nav__link">
+    <span class="md-ellipsis">
+      With a stride
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concatenating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concatenating
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sort-reverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sort &amp; Reverse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repeating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repeating
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/ivansaul/cheatsheets/edit/master/src/en/docs/quick-ref/python/lists.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M441 58.9 453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2 344 121.9l46.1 46.1-134.3 134.2c-2.9 2.9-6.5 5-10.4 6.1L186.9 325l16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25 175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25c-28.1-28.1-73.7-28.1-101.8 0M88 64c-48.6 0-88 39.4-88 88v272c0 48.6 39.4 88 88 88h272c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24v112c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40h112c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="lists">Lists</h1>
+<h2 id="defining">Defining</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li1</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li1</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">[]</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li2</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li3</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li3</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li4</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li4</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="generate">Generate</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)))</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="k">if</span>  <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">81</span><span class="p">]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]))</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="append">Append</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="list-slicing">List Slicing</h2>
+<p>Syntax of list slicing:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">a_list</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">a_list</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">:</span><span class="n">step</span><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="slicing">Slicing</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">[</span><span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">]</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">[</span><span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">]</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="p">[</span><span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="omitting-index">Omitting index</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">]</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">]</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">[</span><span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)]</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">[</span><span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[:]</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h3 id="with-a-stride">With a stride</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">]</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">[</span><span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="p">[</span><span class="s1">&#39;lobster&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">]</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;lobster&#39;</span><span class="p">]</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">[</span><span class="s1">&#39;lobster&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato&#39;</span><span class="p">,</span> <span class="s1">&#39;bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="remove">Remove</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bread&#39;</span><span class="p">,</span> <span class="s1">&#39;butter&#39;</span><span class="p">,</span> <span class="s1">&#39;milk&#39;</span><span class="p">]</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s1">&#39;milk&#39;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">[</span><span class="s1">&#39;bread&#39;</span><span class="p">,</span> <span class="s1">&#39;butter&#39;</span><span class="p">]</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">li</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">[</span><span class="s1">&#39;butter&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="access">Access</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s1">&#39;a&#39;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="s1">&#39;d&#39;</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</span></code></pre></div>
+<h2 id="concatenating">Concatenating</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">odd</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">odd</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">])</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">odd</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">odd</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">odd</span> <span class="o">+</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="sort-reverse">Sort &amp; Reverse</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</span></code></pre></div>
+<h2 id="count">Count</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="mi">2</span>
+</span></code></pre></div>
+<h2 id="repeating">Repeating</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;re&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">li</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">[</span><span class="s1">&#39;re&#39;</span><span class="p">,</span> <span class="s1">&#39;re&#39;</span><span class="p">,</span> <span class="s1">&#39;re&#39;</span><span class="p">]</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 14, 2025 04:16:05"><span class="timeago" datetime="2025-03-14T04:16:05+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 14, 2025 04:16:05">2025-03-14</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 14, 2025 04:16:05"><span class="timeago" datetime="2025-03-14T04:16:05+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 14, 2025 04:16:05">2025-03-14</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+        data-repo="ivansaul/cheatsheets"
+        data-repo-id="R_kgDOOIT4Hg"
+        data-category="Giscus"
+        data-category-id="DIC_kwDOOIT4Hs4CoAaJ"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../f-strings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: F-Strings">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                F-Strings
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../flow-control/" class="md-footer__link md-footer__link--next" aria-label="Next: Flow Control">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Flow Control
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 ivansaul
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/tDvybtJ7y9" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ivansaul/cheatsheets" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../js/timeago.min.js"></script>
+      
+        <script src="../../../js/timeago_mkdocs_material.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": false, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
