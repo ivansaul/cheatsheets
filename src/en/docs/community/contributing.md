@@ -111,7 +111,7 @@ For example, if you want to translate the cheat sheet to Portuguese Brazil, you 
 INHERIT: ../../mkdocs.yml
 
 # Project information
-site_dir: ../../site
+site_dir: ../../site/pt-BR  # (4)!
 site_description: Share quick ... # (1)!
 edit_uri: edit/master/src/en/docs/ # (2)!
 
@@ -124,6 +124,7 @@ theme:
 1. Translate the `site_description` field to your language.
 2. Edit the `edit_uri` field to point to the correct language (e.g., `edit/master/src/pt-BR/docs/`).
 3. Set the `language` field (e.g., `language: pt-BR`).
+4. Set the `site_dir` field (e.g., `site_dir: ../../site/pt-BR`).
 
 **3.** Add the new language to the `languages` field in the main `mkdocs.yml` file that is located in the root directory.
 

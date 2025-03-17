@@ -1,7 +1,7 @@
 INHERIT: ../../mkdocs.yml
 
 # Project information
-site_dir: ../../site
+site_dir: ../../site/pt-BR
 site_description: Seu guia de referência essencial para desenvolvedores que desejam aprender Python, Rust, Swift, JavaScript, Kotlin, Go, Git e muito mais!
 edit_uri: edit/master/src/pt-BR/docs/
 
