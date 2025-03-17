@@ -227,6 +227,12 @@
             </a>
           </li>
         
+          <li class="md-select__item">
+            <a href="https://ivansaul.github.io/cheatsheets/pt-BR/" hreflang="pt-BR" class="md-select__link">
+              Portuguese (BR)
+            </a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -5339,6 +5345,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -5349,6 +5367,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Contribute
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribution Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-new-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a New Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-to-translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing to Translations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5382,6 +5455,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Contribute
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribution Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-new-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a New Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-to-translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing to Translations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5405,10 +5522,130 @@
 
 
 <h1 id="contributing">Contributing</h1>
-<div class="admonition tip">
-<p class="admonition-title">WIP</p>
-<p>This section is still a work in progress...</p>
+<p>Thank you for considering contributing to this project. Your support is essential to improving and expanding it. We appreciate your interest and value your contributions.</p>
+<p>We're always looking to expand and improve Cheatsheets! If you have a cheat sheet to share or see something that could be improved, feel free to submit a pull request. Let's build a valuable resource for developers together.</p>
+<h2 id="how-to-contribute">How to Contribute</h2>
+<p>There are several ways you can contribute to this project:</p>
+<ul>
+<li>Reporting a bug</li>
+<li>Suggesting a feature</li>
+<li>Improving documentation</li>
+<li>Sharing your knowledge</li>
+<li>Giving feedback</li>
+<li>Contributing to translations</li>
+<li>and more...</li>
+</ul>
+<h2 id="contribution-requirements">Contribution Requirements</h2>
+<p>To get started with development, please follow these steps:</p>
+<p><strong>1.</strong> Fork the repository.</p>
+<p><strong>2.</strong> Clone your forked repository.</p>
+<p><strong>3.</strong> Install the project dependencies.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span></code></pre></div>
+<p><strong>4.</strong> Start the development server.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs<span class="w"> </span>serve<span class="w"> </span>-f<span class="w"> </span>src/en/mkdocs.yml
+</span></code></pre></div>
+<p>Once running, visit <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> to preview your changes.</p>
+<h2 id="adding-a-new-cheat-sheet">Adding a New Cheat Sheet</h2>
+<p>Each cheat sheet should be placed inside either the <code>quick-ref</code> or <code>clean-code</code> directory. If you're adding a new cheat sheet for Python, for example, create a <code>python</code> folder inside <code>quick-ref</code>:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="go">├── quick-ref</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="go">    ├── python</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="go">        ├── .toc.md</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="go">        ├── index.md </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="go">        ├── getting-started.md</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="go">        ├── ...</span>
+</span></code></pre></div>
+<p>The <code>index.md</code> file is the landing page for the cheatsheet. It should contain a table of contents for the cheatsheet.</p>
+<div class="language-yaml highlight"><span class="filename">index.md</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nn">---</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Python</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">appicons/python</span><span class="w"> </span><span class="c1"># (1)!</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A concise and practical ...</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nt">tags</span><span class="p">:</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">script</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">interpret</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nt">categories</span><span class="p">:</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">programming</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nn">---</span>
+</span></code></pre></div>
+<ol>
+<li>The <code>icon</code> field should be the name of the icon file in the <code>material/overrides/.icons/appicons</code> directory. For example, if the icon file is <code>python.svg</code>, the <code>icon</code> field should be <code>appicons/python</code>.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Required Fields</p>
+<p>Only the <code>title</code>, <code>icon</code>, and <code>description</code> are required. The <code>tags</code>, <code>cover</code>, and <code>categories</code> fields are optional.</p>
 </div>
+<p>The <code>.toc.md</code> file is used to generate the navigation menu for the cheat sheet.</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Python</span><span class="p p-Indicator">]</span><span class="l l-Scalar l-Scalar-Plain">(index.md)</span><span class="w"> </span><span class="c1"># (1)!</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Getting Started</span><span class="p p-Indicator">]</span><span class="l l-Scalar l-Scalar-Plain">(getting-started.md)</span><span class="w"> </span><span class="c1"># (2)!</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nn">...</span>
+</span></code></pre></div>
+<ol>
+<li>The <code>[Python](index.md)</code> link should point to the <code>index.md</code> file in the <code>python</code> directory.</li>
+<li>The <code>[Getting Started](getting-started.md)</code> link should point to the <code>getting-started.md</code> file in the <code>python</code> directory.</li>
+</ol>
+<p>The <code>getting-started.md</code> file is the first page of the cheat sheet. It should contain a brief introduction to the topic and a table of contents for the rest of the cheat sheet.</p>
+<p>Additional Markdowns files (<code>getting-started.md</code>, etc.) containing the content of the cheat sheet.</p>
+<h2 id="contributing-to-translations">Contributing to Translations</h2>
+<p>We welcome contributions to the documentation in other languages. If you'd like to contribute to translations, please follow these steps:</p>
+<p><strong>1.</strong> Duplicate the <code>src/en/</code> folder and rename it using a <a href="https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language">supported language code</a>. Each language directory contains the following files:</p>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">├── docs</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="go">    ├── quick-ref</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="go">        ├── index.md</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="go">        ├── python</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="go">            ├── index.md</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="go">            ├── getting-started.md</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="go">├── mkdocs.yml</span>
+</span></code></pre></div>
+<p><strong>2.</strong> Edit the <code>mkdocs.yml</code> file in the language directory to set the <code>language</code> field.</p>
+<p>For example, if you want to translate the cheat sheet to Portuguese Brazil, you should set the <code>language</code> field to <code>pt-BR</code>.</p>
+<div class="language-yaml highlight"><span class="filename">src/pt-BR/mkdocs.yml</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">INHERIT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../../mkdocs.yml</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Project information</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nt">site_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">../../site</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nt">site_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Share quick ...</span><span class="w"> </span><span class="c1"># (1)!</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nt">edit_uri</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">edit/master/src/en/docs/</span><span class="w"> </span><span class="c1"># (2)!</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1"># Configuration</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nt">theme</span><span class="p">:</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">material</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span><span class="w">  </span><span class="c1"># (3)!</span>
+</span></code></pre></div>
+<ol>
+<li>Translate the <code>site_description</code> field to your language.</li>
+<li>Edit the <code>edit_uri</code> field to point to the correct language (e.g., <code>edit/master/src/pt-BR/docs/</code>).</li>
+<li>Set the <code>language</code> field (e.g., <code>language: pt-BR</code>).</li>
+</ol>
+<p><strong>3.</strong> Add the new language to the <code>languages</code> field in the main <code>mkdocs.yml</code> file that is located in the root directory.</p>
+<div class="language-yaml highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">extra</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">alternate</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://ivansaul.github.io/cheatsheets</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">en</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Portuguese (BR)</span><span class="w"> </span><span class="c1"># (1)!</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">      </span><span class="nt">link</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://ivansaul.github.io/cheatsheets/pt-BR/</span><span class="w"> </span><span class="c1"># (2)!</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">      </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pt-BR</span><span class="w"> </span><span class="c1"># (3)!</span>
+</span></code></pre></div>
+<ol>
+<li>This field will be used to display the language name in the language selector.</li>
+<li>This field will be used to redirect users to the correct language version of the cheat sheet.</li>
+<li>This field will be used to set the <code>language</code> field in the <code>mkdocs.yml</code> file in the language directory.</li>
+</ol>
+<p><strong>4.</strong> Start the development server.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>mkdocs<span class="w"> </span>serve<span class="w"> </span>-f<span class="w"> </span>src/pt-BR/mkdocs.yml
+</span></code></pre></div>
+<p><strong>5.</strong>  Add new jobs to the <code>deploy.yml</code> workflow file to build the documentation for the new language.</p>
+<div class="language-yaml highlight"><span class="filename">.github/workflows/deploy.yml</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build English Documentation</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs build -f src/en/mkdocs.yml</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Portuguese (BR) Documentation</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs build -f src/pt-BR/mkdocs.yml</span>
+</span></code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">Build and Deploy Workflow</p>
+<p>The new jobs should be added after the <code>Build English Documentation</code> job.</p>
+</div>
+<p><strong>6.</strong> Once your translation is complete, commit your changes and submit a pull request.</p>
 
 
 
@@ -5431,7 +5668,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 14, 2025 01:31:59"><span class="timeago" datetime="2025-03-14T01:31:59+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 14, 2025 01:31:59">2025-03-14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 17, 2025 04:11:13"><span class="timeago" datetime="2025-03-17T04:11:13+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 17, 2025 04:11:13">2025-03-17</span>
   </span>
 
     
